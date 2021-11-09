@@ -1,0 +1,22 @@
+.text, .h1, .textarea {
+  color: red;
+  font-size: 20px;
+}
+
+.btn {
+  border: 3px solid yellow;
+}
+
+.btn-default {
+  color: white;
+}
+
+.test1 {
+  content: "html";
+}
+
+.test2 {
+  content: "react";
+}
+
+/*# sourceMappingURL=output2.css.map */

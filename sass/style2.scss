@@ -1,0 +1,59 @@
+// question 1
+.text{
+    color: red;
+    font-size: 20px;
+    
+    }
+    .textarea{
+        @extend .text;   
+    }
+    .h1{
+        @extend .text;   
+    }
+  //question 2 
+@mixin inline-block($border) {
+    
+  border :$border;
+  
+ }
+.btn{
+
+@include inline-block(3px solid yellow)
+
+} 
+//question 3
+@function background($color){
+   
+
+    @if ($color == white){
+       @return black;
+    
+    }
+   @else {
+
+    @return  white;
+   }
+    
+    }
+    //test 
+.btn-default{
+    color :background(pink);
+    
+}
+// question 4
+//tab m 0 u list ml 1 
+$languages : "html","angular","spring","react";
+@function first($list){
+@return nth($list,1);
+
+}
+@function last($list){
+    @return nth($list,length($list));
+    
+    }
+.test1{
+  content: first($languages);  
+}
+.test2{
+    content: last($languages);  
+  }
